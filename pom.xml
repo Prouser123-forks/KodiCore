@@ -2,7 +2,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>me.prouser123</groupId>
   <artifactId>KodiCore</artifactId>
-  <version>0.2.0-STABLE</version>
+  <version>0.2.0-SNAPSHOT-DISCORD</version>
   <build>
     <sourceDirectory>src/java</sourceDirectory>
     <resources>
@@ -32,6 +32,11 @@
   <name>KodiCore</name>
   <url>https://github.com/Prouser123/KodiCore/</url>
   <repositories>
+    <!-- Sonatype (For JavaCord) -->
+    <repository>
+      <id>Sonatype Snapshots</id>
+      <url>https://oss.sonatype.org/content/repositories/snapshots/</url>
+    </repository>
     <repository>
       <id>spigot-repo</id>
       <url>https://hub.spigotmc.org/nexus/content/repositories/snapshots/</url>
@@ -56,14 +61,13 @@
       <version>1.12-R0.1-SNAPSHOT</version>
       <scope>provided</scope>
     </dependency>
-    <!-- CraftBukkit (Local File) -->
-    <!--<dependency>
-    <groupId>org.bukkit</groupId>
-    <artifactId>craftbukkit</artifactId>
-    <version>1.12-R0.1-SNAPSHOT</version>
-    <scope>system</scope>
-    <systemPath>${project.basedir}/lib/craftbukkit-1.12.jar</systemPath>
-</dependency>-->
+    <!-- JavaCord (Discord Library) -->
+    <dependency>
+      <groupId>org.javacord</groupId>
+      <artifactId>javacord</artifactId>
+      <version>3.0.1</version>
+      <type>pom</type>
+    </dependency>
   </dependencies>
   <distributionManagement>
     <repository>
