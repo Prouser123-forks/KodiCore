@@ -5,8 +5,12 @@ import org.javacord.api.listener.message.MessageCreateListener;
 
 public class CopyOwnerAvatar implements MessageCreateListener {
 	
-	public String command = "!copyAvatar";
-
+	public static String command = null;
+	
+	public CopyOwnerAvatar(String command) {
+		CopyOwnerAvatar.command = command;
+	}
+	
 	/**
 	 * Listener Command. When run by the Bot Owner, it will set the Bot's avatar icon to that of that user.
 	 * Usage: api.addMessageCreateListener(new CopyOwnerAvatar());
