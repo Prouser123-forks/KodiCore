@@ -38,7 +38,7 @@ public class Main extends JavaPlugin {
 		// Create a instance of Console
 		new Console(this);
 		// Create an instance of Discord
-		new Discord("null");
+		//new Discord("null");
 		// Send a message
 		Console.info("Welcome to KodiCore! Initializing...");
 	}

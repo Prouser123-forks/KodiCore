@@ -18,11 +18,11 @@ public class Discord {
 		api = new DiscordApiBuilder().setToken(token).login().join();
 		
         // Print the invite url of the bot
-        Console.info("[JavaCord Discord] + Bot Invite Link: " + api.createBotInvite());
+        Console.info("[Discord] Bot Invite Link: " + api.createBotInvite());
         
         // Create server join Listeners
-        api.addServerJoinListener(event -> Console.info("[JavaCord Discord] Joined Server: " + event.getServer().getName()));
-        api.addServerLeaveListener(event -> Console.info("[JavaCord Discord] Left Server: " + event.getServer().getName()));
+        api.addServerJoinListener(event -> Console.info("[Discord] Joined Server: " + event.getServer().getName()));
+        api.addServerLeaveListener(event -> Console.info("[Discord] Left Server: " + event.getServer().getName()));
 	}
 	
 	public static class createListener {
@@ -54,7 +54,7 @@ public class Discord {
 			api.addMessageCreateListener(event -> {
 		        if (event.getMessageContent().equalsIgnoreCase(discordCommand)) {
 		            event.getChannel().sendMessage("Running console command: " + consoleCommand);
-		            Console.info("[JavaCord Discord] + Running console command " + consoleCommand + " from user " + event.getMessage().getAuthor().getName());
+		            Console.info("[Discord] + Running console command '" + consoleCommand + "' from user '" + event.getMessage().getAuthor().getName() + "'...");
 		            Utils.runConsoleCommand(consoleCommand);
 		            
 		            

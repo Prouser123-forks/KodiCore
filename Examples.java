@@ -1,6 +1,7 @@
 package com.example.examples;
 
 import me.prouser123.kodicore.Discord;
+import me.prouser123.kodicore.discord.commands.CopyOwnerAvatar;
 
 public class Examples {
 	
@@ -17,6 +18,6 @@ public class Examples {
 		// Execute a command in the console, triggered by a discord command
 		// E.g. execute /save when !save is sent.
 		// Leave out the / when putting in the console command
-		Discord.createListener.discordToConsoleCommand("!save", "save", api);
+		Discord.createListener.discordToConsoleCommand("!save", "save", Discord.api);
 	}
 }
