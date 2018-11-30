@@ -3,6 +3,7 @@ package me.prouser123.kodicore.discord;
 import org.javacord.api.DiscordApiBuilder;
 import org.javacord.api.DiscordApi;
 
+import me.prouser123.kodicore.Utils;
 import me.prouser123.kodicore.send.Console;
 
 public class Discord {
@@ -37,6 +38,26 @@ public class Discord {
 		    api.addMessageCreateListener(event -> {
 		        if (event.getMessageContent().equalsIgnoreCase(command)) {
 		            event.getChannel().sendMessage(output);
+		        }
+		    });
+		}
+		
+		/**
+		 * Execute a command in the console, triggered by a discord command
+		 * 
+		 * @param discordCommand command to trigger the event
+		 * @param consoleCommand command to execute in console (e.g. stop (leave out the /))
+		 * @param api JavaCord DiscordApi Instance
+		 */
+		public static void discordToConsoleCommand(String discordCommand, String consoleCommand, DiscordApi api) {
+			// Add a listener to run a console command when the given discord command is recieved
+			api.addMessageCreateListener(event -> {
+		        if (event.getMessageContent().equalsIgnoreCase(discordCommand)) {
+		            event.getChannel().sendMessage("Running console command: " + consoleCommand);
+		            Console.info("[JavaCord Discord] + Running console command " + consoleCommand + " from user " + event.getMessage().getAuthor().getName());
+		            Utils.runConsoleCommand(consoleCommand);
+		            
+		            
 		        }
 		    });
 		}

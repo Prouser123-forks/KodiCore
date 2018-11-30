@@ -13,5 +13,10 @@ public class Examples {
 		
 		// Register a command to, when run by the bot owner, grab the owner's avatar and set as the bot avatar.
 		Discord.api.addMessageCreateListener(new CopyOwnerAvatar("!getOwnerAvatar"));
+		
+		// Execute a command in the console, triggered by a discord command
+		// E.g. execute /save when !save is sent.
+		// Leave out the / when putting in the console command
+		Discord.createListener.discordToConsoleCommand("!save", "save", api);
 	}
 }
