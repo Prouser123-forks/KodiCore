@@ -2,6 +2,7 @@ package me.prouser123.kodicore;
 
 import org.bukkit.plugin.java.JavaPlugin;
 
+import me.prouser123.kodicore.discord.Discord;
 import me.prouser123.kodicore.send.Console;
 
 public class Main extends JavaPlugin {
@@ -36,6 +37,8 @@ public class Main extends JavaPlugin {
 		version = getDescription().getVersion();
 		// Create a instance of Console
 		new Console(this);
+		// Create an instance of Discord
+		new Discord("null");
 		// Send a message
 		Console.info("Welcome to KodiCore! Initializing...");
 	}
