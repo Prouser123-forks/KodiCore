@@ -2,7 +2,6 @@ package me.prouser123.kodicore;
 
 import org.bukkit.plugin.java.JavaPlugin;
 
-import me.prouser123.kodicore.discord.Discord;
 import me.prouser123.kodicore.send.Console;
 
 public class Main extends JavaPlugin {

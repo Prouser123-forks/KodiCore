@@ -1,9 +1,6 @@
 package me.prouser123.kodicore.discord.commands;
 
-import java.awt.Color;
 import java.lang.management.ManagementFactory;
-import java.lang.management.RuntimeMXBean;
-import java.lang.reflect.Array;
 import java.text.SimpleDateFormat;
 import java.util.concurrent.ExecutionException;
 
@@ -13,8 +10,6 @@ import org.javacord.api.event.message.MessageCreateEvent;
 import org.javacord.api.listener.message.MessageCreateListener;
 
 import me.prouser123.kodicore.Main;
-import me.prouser123.kodicore.Utils;
-import me.prouser123.kodicore.send.Console;
 
 public class ServerInfo implements MessageCreateListener {
 	
