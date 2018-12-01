@@ -48,20 +48,20 @@ public class ServerInfo implements MessageCreateListener {
         	String uptime_output = "";
         	
         	if(Integer.parseInt(uptime_hours) != 0 ) {
-        		uptime_output += uptime_hours + " hours";
+        		uptime_output += uptime_hours + " hrs";
         	}
         	
         	if(Integer.parseInt(uptime_minutes) != 0 ) {
         		
         		if(Integer.parseInt(uptime_minutes) != 1) {
-            		uptime_output += " " + uptime_minutes + " minutes ";
+            		uptime_output += " " + uptime_minutes + " mins ";
         		} 
         		else {
-            		uptime_output += " " + uptime_minutes + " minute ";
+            		uptime_output += " " + uptime_minutes + " min ";
         		}
         	}
         	
-        	uptime_output += uptime_seconds + " seconds";
+        	uptime_output += uptime_seconds + " secs";
         	
         	// Get Bot Owner
         	String bot_owner = "<@";
