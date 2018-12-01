@@ -35,7 +35,9 @@ public class CopyOwnerAvatar implements MessageCreateListener {
                         event.getChannel().sendMessage("Something went wrong: " + throwable.getMessage());
                         return null;
                     });
+            return;
         }
+        return;
     }
 
 }
