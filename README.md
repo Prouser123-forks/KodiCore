@@ -1,6 +1,6 @@
 # KodiCore
 
-[![Codacy Badge](https://api.codacy.com/project/badge/Grade/fc6ad96bff994eceb807dc979b2d9bae)](https://www.codacy.com/app/CodeNet/KodiCore?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=Prouser123/KodiCore&amp;utm_campaign=Badge_Grade)
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/b000a83e48c142b2870cf4fe46b36c14)](https://www.codacy.com/app/KodiCore/KodiCore?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=KodiCore/KodiCore&amp;utm_campaign=Badge_Grade)
 [![TravisCI Build Status](https://travis-ci.com/Prouser123/KodiCore.svg?branch=master)](https://travis-ci.com/Prouser123/KodiCore)
 ![Build Type - Shields.io](https://img.shields.io/badge/type-maven-red.svg)
 ![Lines of Code](https://tokei.rs/b1/github/Prouser123/KodiCore)
