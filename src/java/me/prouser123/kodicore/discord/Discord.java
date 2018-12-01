@@ -9,8 +9,16 @@ import me.prouser123.kodicore.send.Console;
 public class Discord {
 	
 	public static String token = null; // Bot token
+	
+	/**
+	 * Discord API Instance
+	 */
 	public static DiscordApi api = null; // Api Instance
 	
+	/**
+	 * Class
+	 * @param token bot token
+	 */
 	public Discord(String token) {
 		Discord.token = token;
 		
